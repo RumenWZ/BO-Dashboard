@@ -1,0 +1,51 @@
+.env
+*.env
+**/.env
+**/*.env
+# -----------------------
+# React Frontend ignores
+# -----------------------
+/Frontend/node_modules/
+Frontend/build/
+Frontend/.env
+Frontend/.DS_Store
+Frontend/.parcel-cache/
+Frontend/dist/
+Frontend/npm-debug.log*
+Frontend/yarn-debug.log*
+Frontend/yarn-error.log*
+Frontend/.eslintcache
+
+# -----------------------
+# ASP.NET API ignores
+# -----------------------
+/API/bin/
+/API/obj/
+/API/.vs/
+/API/*.user
+/API/*.suo
+/API/*.userosscache
+/API/*.sln.docstates
+/API/.vscode/
+/API/.env
+
+/API/appsettings.Development.json
+/API/appsettings.Local.json
+/API/appsettings.*.json
+
+# -----------------------
+# Global ignores (OS/editor level)
+# -----------------------
+*.log
+*.swp
+*.tmp
+*.bak
+*.orig
+*.rej
+*.swn
+*.swo
+.DS_Store
+Thumbs.db
+ehthumbs.db
+.idea/
+.vscode/
