@@ -19,6 +19,7 @@ Frontend/.eslintcache
 # -----------------------
 # ASP.NET API ignores
 # -----------------------
+**/.vs/
 /API/bin/
 /API/obj/
 /API/.vs/
