@@ -14,12 +14,15 @@ namespace API.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
+        public DbSet<Appointment> Appointments { get; set; }
+        public DbSet<Service> Services { get; set; }
+        public DbSet<Business> Businesses { get; set; }
+        public DbSet<ApplicationUserService> ApplicationUserServices { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
 
-            // Configure ApplicationUserRole (join entity for Users and Roles)
             builder.Entity<ApplicationUserRole>(userRole =>
             {
                 userRole.HasKey(ur => new { ur.UserId, ur.RoleId });
@@ -35,41 +38,35 @@ namespace API.Data
                     .IsRequired();
             });
 
-            // Business -> Employees (ApplicationUser)
             builder.Entity<Business>()
                 .HasMany(b => b.Employees)
                 .WithOne()
                 .OnDelete(DeleteBehavior.Restrict);
 
-            // Business -> Services
             builder.Entity<Business>()
                 .HasMany(b => b.Services)
                 .WithOne(s => s.Business)
                 .HasForeignKey(s => s.BusinessId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            // Appointment -> Service
             builder.Entity<Appointment>()
                 .HasOne(a => a.Service)
                 .WithMany()
                 .HasForeignKey(a => a.ServiceId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            // Appointment -> Employee (ApplicationUser)
             builder.Entity<Appointment>()
                 .HasOne(a => a.Employee)
-                .WithMany(u => u.AppointmentsAsEmployee)  // Fixed typo here
+                .WithMany(u => u.AppointmentsAsEmployee)
                 .HasForeignKey(a => a.EmployeeId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            // Appointment -> Customer (ApplicationUser)
             builder.Entity<Appointment>()
                 .HasOne(a => a.Customer)
                 .WithMany(u => u.AppointmentsAsCustomer)
                 .HasForeignKey(a => a.CustomerId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            // Many-to-many: ApplicationUser <-> Service via ApplicationUserService
             builder.Entity<ApplicationUserService>()
                 .HasKey(au => new { au.UserId, au.ServiceId });
 
@@ -83,12 +80,11 @@ namespace API.Data
                 .WithMany(s => s.ApplicationUserServices)
                 .HasForeignKey(au => au.ServiceId);
 
-            // Configure decimal precision for Price property in Service
             builder.Entity<Service>()
                 .Property(s => s.Price)
                 .HasPrecision(18, 2);
 
-            // Default values for CreatedAt columns
+            // Default values
             builder.Entity<ApplicationUser>()
                 .Property(u => u.CreatedAt)
                 .HasDefaultValueSql("getutcdate()");
