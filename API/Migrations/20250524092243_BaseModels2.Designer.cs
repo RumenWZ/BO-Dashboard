@@ -4,6 +4,7 @@ using API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250524092243_BaseModels2")]
+    partial class BaseModels2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -159,21 +162,6 @@ namespace API.Migrations
                     b.ToTable("AspNetUserRoles", (string)null);
                 });
 
-            modelBuilder.Entity("API.Models.ApplicationUserService", b =>
-                {
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<Guid>("ServiceId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("UserId", "ServiceId");
-
-                    b.HasIndex("ServiceId");
-
-                    b.ToTable("ApplicationUserService");
-                });
-
             modelBuilder.Entity("API.Models.Appointment", b =>
                 {
                     b.Property<Guid>("Id")
@@ -248,6 +236,9 @@ namespace API.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("ApplicationUserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<Guid>("BusinessId")
                         .HasColumnType("uniqueidentifier");
 
@@ -277,6 +268,8 @@ namespace API.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId");
 
                     b.HasIndex("BusinessId");
 
@@ -401,25 +394,6 @@ namespace API.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("API.Models.ApplicationUserService", b =>
-                {
-                    b.HasOne("API.Models.Service", "Service")
-                        .WithMany("ApplicationUserServices")
-                        .HasForeignKey("ServiceId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("API.Models.ApplicationUser", "User")
-                        .WithMany("ApplicationUserServices")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Service");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("API.Models.Appointment", b =>
                 {
                     b.HasOne("API.Models.ApplicationUser", "Customer")
@@ -429,7 +403,7 @@ namespace API.Migrations
                         .IsRequired();
 
                     b.HasOne("API.Models.ApplicationUser", "Employee")
-                        .WithMany("AppointmentsAsEmployee")
+                        .WithMany("AppointmentsAsEmlpoyee")
                         .HasForeignKey("EmployeeId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
@@ -449,6 +423,11 @@ namespace API.Migrations
 
             modelBuilder.Entity("API.Models.Service", b =>
                 {
+                    b.HasOne("API.Models.ApplicationUser", null)
+                        .WithMany("Services")
+                        .HasForeignKey("ApplicationUserId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
                     b.HasOne("API.Models.Business", "Business")
                         .WithMany("Services")
                         .HasForeignKey("BusinessId")
@@ -501,11 +480,11 @@ namespace API.Migrations
 
             modelBuilder.Entity("API.Models.ApplicationUser", b =>
                 {
-                    b.Navigation("ApplicationUserServices");
-
                     b.Navigation("AppointmentsAsCustomer");
 
-                    b.Navigation("AppointmentsAsEmployee");
+                    b.Navigation("AppointmentsAsEmlpoyee");
+
+                    b.Navigation("Services");
 
                     b.Navigation("UserRoles");
                 });
@@ -515,11 +494,6 @@ namespace API.Migrations
                     b.Navigation("Employees");
 
                     b.Navigation("Services");
-                });
-
-            modelBuilder.Entity("API.Models.Service", b =>
-                {
-                    b.Navigation("ApplicationUserServices");
                 });
 #pragma warning restore 612, 618
         }
