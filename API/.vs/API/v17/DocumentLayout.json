@@ -7,14 +7,6 @@
       "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -29,6 +21,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\models\\applicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:models\\applicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -86,8 +86,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-17T07:36:42.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T07:36:42.231Z"
             },
             {
               "$type": "Document",
@@ -97,27 +96,27 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAUwDgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T07:29:01.074Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
               "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK0AAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAYwK0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T07:29:00.948Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "TokenService.cs",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "Services\\TokenService.cs",
@@ -125,25 +124,24 @@
               "RelativeToolTip": "Services\\TokenService.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAAwDQAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T07:29:00.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T07:29:00.88Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
               "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T07:29:00.821Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
@@ -156,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "ApplicationRole.cs",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\ApplicationRole.cs",
               "RelativeDocumentMoniker": "Models\\ApplicationRole.cs",
@@ -181,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "ApplicationUserRole.cs",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\ApplicationUserRole.cs",
               "RelativeDocumentMoniker": "Models\\ApplicationUserRole.cs",

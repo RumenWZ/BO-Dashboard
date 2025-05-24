@@ -3,7 +3,6 @@ using API.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
 using System.Security.Claims;
 
 namespace API.Controllers
@@ -16,7 +15,6 @@ namespace API.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<ApplicationRole> _roleManager;
         private readonly TokenService _tokenService;
-        private readonly IConfiguration _configuration;
         private readonly ILogger<AuthController> _logger;
 
         public AuthController(
@@ -31,7 +29,6 @@ namespace API.Controllers
             _userManager = userManager;
             _roleManager = roleManager;
             _tokenService = tokenService;
-            _configuration = configuration;
             _logger = logger;
         }
 
