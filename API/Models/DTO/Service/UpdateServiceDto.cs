@@ -1,11 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace API.Models
+namespace API.Models.DTO.Service
 {
-    public class Service
+    public class UpdateServiceDto
     {
-        public Guid Id { get; set; }
-
         [Required(ErrorMessage = "Name is required.")]
         [StringLength(100, ErrorMessage = "Name cannot exceed 100 characters.")]
         public string Name { get; set; } = string.Empty;
@@ -21,13 +19,8 @@ namespace API.Models
         [Range(1, int.MaxValue, ErrorMessage = "Duration must be at least 1 minute.")]
         [DataType(DataType.Duration)]
         public int DurationInMinutes { get; set; }
-        [Required]
+
+        [Required(ErrorMessage = "Business ID is required.")]
         public Guid BusinessId { get; set; }
-        public virtual Business? Business { get; set; }
-
-        public ICollection<ApplicationUserService> ApplicationUserServices { get; set; } = new List<ApplicationUserService>();
-
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public DateTime? UpdatedAt { get; set; }
     }
 }

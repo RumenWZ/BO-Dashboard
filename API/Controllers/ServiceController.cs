@@ -47,6 +47,51 @@ namespace API.Controllers
             return CreatedAtAction(nameof(GetServiceById), new { id = service.Id }, service);
         }
 
+        [HttpPut("update/{id:guid}")]
+        public async Task<IActionResult> UpdateService(Guid id, [FromBody] UpdateServiceDto dto)
+        {
+            if (ModelState.IsValid == false)
+            {
+                return BadRequest(ModelState);
+            }
+            var service = await _context.Services.FindAsync(id);
+            if (service == null)
+            {
+                return NotFound($"Service with ID {id} not found.");
+            }
+
+            if (dto.BusinessId == Guid.Empty)
+            {
+                return BadRequest("BusinessId must be a valid GUID.");
+            }
+
+            var businessExists = await _context.Businesses.AnyAsync(b => b.Id == dto.BusinessId);
+            if (!businessExists)
+            {
+                return BadRequest("The specified Business ID does not exist.");
+            }
+
+            _mapper.Map(dto, service);
+            service.UpdatedAt = DateTime.UtcNow;
+
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
+
+
+        [HttpDelete("delete/{id:guid}")]
+        public async Task<IActionResult> DeleteService(Guid id)
+        {
+            var service = await _context.Services.FindAsync(id);
+            if (service == null)
+            {
+                return NotFound($"Service with ID {id} not found.");
+            }
+            _context.Services.Remove(service);
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
+
         [HttpGet("{id}")]
         public async Task<IActionResult> GetServiceById(Guid id)
         {
@@ -62,6 +107,63 @@ namespace API.Controllers
 
             var serviceDto = _mapper.Map<ServiceDto>(service);
             return Ok(serviceDto);
+        }
+
+        [HttpPost("add-service-to-employee/{employeeId}")]
+        public async Task<IActionResult> AddServiceToEmployee(string employeeId, [FromBody] Guid serviceId)
+        {
+            var user = await _context.Users
+                .Include(u => u.ApplicationUserServices)
+                .FirstOrDefaultAsync(u => u.Id == employeeId);
+            if (user == null)
+            {
+                return NotFound($"Employee with ID {employeeId} not found.");
+            }
+            var service = await _context.Services.FindAsync(serviceId);
+            if (service == null)
+            {
+                return NotFound($"Service with ID {serviceId} not found.");
+            }
+            if (user.ApplicationUserServices.Any(aus => aus.ServiceId == serviceId))
+            {
+                return BadRequest($"Service with ID {serviceId} is already assigned to employee with ID {employeeId}.");
+            }
+            user.ApplicationUserServices.Add(new ApplicationUserService
+            {
+                User = user,
+                Service = service,
+                ServiceId = serviceId
+            });
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
+
+        [HttpGet("employee/{employeeId}/services")]
+        public async Task<IActionResult> GetServicesByEmployeeId(string employeeId)
+        {
+            var user = await _context.Users
+                .Include(u => u.ApplicationUserServices)
+                    .ThenInclude(aus => aus.Service)
+                .FirstOrDefaultAsync(u => u.Id == employeeId);
+
+            if (user == null)
+            {
+                return NotFound($"Employee with ID {employeeId} was not found or is not an employee.");
+            }
+
+            var services = user.ApplicationUserServices
+                .Select(aus => aus.Service)
+                .Where(s => s != null)
+                .ToList();
+
+            if (services.Count == 0)
+            {
+                return NotFound($"No services found for employee with ID {employeeId}.");
+            }
+
+            var serviceDtos = _mapper.Map<IEnumerable<ServiceDto>>(services);
+
+            return Ok(serviceDtos);
         }
     }
 }

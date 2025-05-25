@@ -207,6 +207,27 @@
   },
   {
     "ContainingType": "API.Controllers.ServiceController",
+    "Method": "AddServiceToEmployee",
+    "RelativePath": "api/Service/add-service-to-employee/{employeeId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "serviceId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ServiceController",
     "Method": "CreateService",
     "RelativePath": "api/Service/create",
     "HttpMethod": "POST",
@@ -216,6 +237,59 @@
       {
         "Name": "dto",
         "Type": "API.Models.DTO.Service.CreateServiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ServiceController",
+    "Method": "DeleteService",
+    "RelativePath": "api/Service/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ServiceController",
+    "Method": "GetServicesByEmployeeId",
+    "RelativePath": "api/Service/employee/{employeeId}/services",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ServiceController",
+    "Method": "UpdateService",
+    "RelativePath": "api/Service/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "API.Models.DTO.Service.UpdateServiceDto",
         "IsRequired": true
       }
     ],

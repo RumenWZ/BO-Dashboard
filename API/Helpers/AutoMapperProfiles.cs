@@ -10,14 +10,25 @@ namespace API.Helpers
     {
         public AutoMapperProfiles()
         {
-            CreateMap<CreateAppointmentDto, Appointment>();
+            // Appointments
             CreateMap<Appointment, AppointmentDto>();
+            CreateMap<CreateAppointmentDto, Appointment>();
+            // Business
             CreateMap<CreateBusinessDto, Business>();
-            CreateMap<CreateServiceDto, Models.Service>();
+            
+            // Services
             CreateMap<Models.Service, ServiceDto>();
+            CreateMap<CreateServiceDto, Models.Service>();
+            CreateMap<UpdateServiceDto, Service>()
+            .ForMember(dest => dest.Id, opt => opt.Ignore()) 
+            .ForMember(dest => dest.CreatedAt, opt => opt.Ignore()) 
+            .ForMember(dest => dest.UpdatedAt, opt => opt.Ignore()) 
+            .ForMember(dest => dest.Business, opt => opt.Ignore())
+            .ForMember(dest => dest.ApplicationUserServices, opt => opt.Ignore());
+
+            // User
             CreateMap<ApplicationUserService, ApplicationUserServiceDto>()
                 .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.User.UserName));
-
         }
     }
 }
