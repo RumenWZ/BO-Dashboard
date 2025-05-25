@@ -14,5 +14,6 @@ namespace API.Models.DTO.Appointment
         public DateTime CreatedAt { get; set; }
         [JsonConverter(typeof(JsonStringEnumConverter))]
         public AppointmentStatus Status { get; set; }
+        public DateTime UpdatedAt { get; set; }
     }
 }

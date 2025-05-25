@@ -17,27 +17,6 @@
   },
   {
     "ContainingType": "API.Controllers.AppointmentController",
-    "Method": "AddAppointmentToEmployee",
-    "RelativePath": "api/Appointment/add-appointment-to-employee/{employeeId}",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "API.Models.DTO.Appointment.AssignAppointmentDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "employeeId",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API.Controllers.AppointmentController",
     "Method": "CreateAppointment",
     "RelativePath": "api/Appointment/create",
     "HttpMethod": "POST",
@@ -47,6 +26,75 @@
       {
         "Name": "dto",
         "Type": "API.Models.DTO.Appointment.CreateAppointmentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AppointmentController",
+    "Method": "GetAppointmentsForCustomer",
+    "RelativePath": "api/Appointment/customer/{customerId}/appointments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AppointmentController",
+    "Method": "DeleteAppointment",
+    "RelativePath": "api/Appointment/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AppointmentController",
+    "Method": "GetUpcomingAppointmentsForEmployee",
+    "RelativePath": "api/Appointment/employee/{employeeId}/appointments/upcoming",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AppointmentController",
+    "Method": "UpdateAppointment",
+    "RelativePath": "api/Appointment/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "API.Models.DTO.Appointment.UpdateAppointmentDto",
         "IsRequired": true
       }
     ],

@@ -3,6 +3,58 @@
   "WorkspaceRootPath": "D:\\CSharp\\repos\\Beast\\API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\models\\dto\\appointment\\appointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:models\\dto\\appointment\\appointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\models\\dto\\appointment\\updateappointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:models\\dto\\appointment\\updateappointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\helpers\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:helpers\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\models\\applicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:models\\applicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\models\\dto\\appointment\\assignappointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:models\\dto\\appointment\\assignappointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\controllers\\businesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:controllers\\businesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,24 +67,12 @@
       "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:models\\applicationuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\models\\dto\\service\\servicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:models\\dto\\service\\servicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\helpers\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:helpers\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\models\\dto\\service\\applicationuserservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:models\\dto\\service\\applicationuserservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\models\\dto\\appointment\\assignappointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:models\\dto\\appointment\\assignappointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\models\\business.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,44 +87,12 @@
       "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\models\\dto\\business\\createbusinessdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:models\\dto\\business\\createbusinessdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\models\\dto\\service\\createservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:models\\dto\\service\\createservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\models\\dto\\appointment\\appointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:models\\dto\\appointment\\appointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\controllers\\businesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:controllers\\businesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\models\\applicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:models\\applicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\data\\seeders\\roleseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -101,10 +109,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\models\\dto\\appointment\\createappointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:models\\dto\\appointment\\createappointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7E2A922-72C6-4562-8994-D0FE3FE59BB0}|API.csproj|d:\\csharp\\repos\\beast\\api\\migrations\\20250524140239_includedbset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -146,7 +150,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -158,98 +162,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20250525172006_AddApplicationUserService.cs",
-              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Migrations\\20250525172006_AddApplicationUserService.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250525172006_AddApplicationUserService.cs",
-              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Migrations\\20250525172006_AddApplicationUserService.cs",
-              "RelativeToolTip": "Migrations\\20250525172006_AddApplicationUserService.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAkwGYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "UpdateAppointmentDto.cs",
+              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Appointment\\UpdateAppointmentDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\Appointment\\UpdateAppointmentDto.cs",
+              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Appointment\\UpdateAppointmentDto.cs",
+              "RelativeToolTip": "Models\\DTO\\Appointment\\UpdateAppointmentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T17:20:10.701Z",
+              "WhenOpened": "2025-05-25T19:29:14.774Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ApplicationUserServiceDto.cs",
-              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Service\\ApplicationUserServiceDto.cs",
-              "RelativeDocumentMoniker": "Models\\DTO\\Service\\ApplicationUserServiceDto.cs",
-              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Service\\ApplicationUserServiceDto.cs",
-              "RelativeToolTip": "Models\\DTO\\Service\\ApplicationUserServiceDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AppointmentController.cs",
+              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\AppointmentController.cs",
+              "RelativeToolTip": "Controllers\\AppointmentController.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAqwHMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T17:13:44.337Z",
+              "WhenOpened": "2025-05-24T08:52:39.278Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "BusinessDto.cs",
-              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Business\\BusinessDto.cs",
-              "RelativeDocumentMoniker": "Models\\DTO\\Business\\BusinessDto.cs",
-              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Business\\BusinessDto.cs*",
-              "RelativeToolTip": "Models\\DTO\\Business\\BusinessDto.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Title": "AssignAppointmentDto.cs",
+              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Appointment\\AssignAppointmentDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\Appointment\\AssignAppointmentDto.cs",
+              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Appointment\\AssignAppointmentDto.cs",
+              "RelativeToolTip": "Models\\DTO\\Appointment\\AssignAppointmentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T14:43:43.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ServiceDto.cs",
-              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Service\\ServiceDto.cs",
-              "RelativeDocumentMoniker": "Models\\DTO\\Service\\ServiceDto.cs",
-              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Service\\ServiceDto.cs",
-              "RelativeToolTip": "Models\\DTO\\Service\\ServiceDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T10:39:01.287Z",
+              "WhenOpened": "2025-05-25T16:55:56.249Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ServiceController.cs",
-              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\ServiceController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ServiceController.cs",
-              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\ServiceController.cs",
-              "RelativeToolTip": "Controllers\\ServiceController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowDYAAAAxAAAAAAAAAA==",
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "Models\\Appointment.cs",
+              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\Appointment.cs",
+              "RelativeToolTip": "Models\\Appointment.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwBcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T14:17:54.661Z",
+              "WhenOpened": "2025-05-24T07:58:02.991Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Business.cs",
-              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\Business.cs",
-              "RelativeDocumentMoniker": "Models\\Business.cs",
-              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\Business.cs",
-              "RelativeToolTip": "Models\\Business.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
+              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T07:33:13.405Z",
+              "WhenOpened": "2025-05-17T07:29:00.754Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApplicationUserService.cs",
-              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\ApplicationUserService.cs",
-              "RelativeDocumentMoniker": "Models\\ApplicationUserService.cs",
-              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\ApplicationUserService.cs",
-              "RelativeToolTip": "Models\\ApplicationUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T09:31:44.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AutoMapperProfiles.cs",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Helpers\\AutoMapperProfiles.cs",
               "RelativeDocumentMoniker": "Helpers\\AutoMapperProfiles.cs",
@@ -263,12 +241,77 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AppointmentDto.cs",
+              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Appointment\\AppointmentDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\Appointment\\AppointmentDto.cs",
+              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Appointment\\AppointmentDto.cs*",
+              "RelativeToolTip": "Models\\DTO\\Appointment\\AppointmentDto.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T14:06:52.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwJYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T07:29:00.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BusinessController.cs",
+              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\BusinessController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BusinessController.cs",
+              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\BusinessController.cs",
+              "RelativeToolTip": "Controllers\\BusinessController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T14:18:58.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TaskController.cs",
+              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "Controllers\\TaskController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T07:29:01.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T07:29:00.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAUwIAAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAUwHkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T07:29:01.074Z",
               "EditorCaption": ""
@@ -276,6 +319,118 @@
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "ServiceController.cs",
+              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\ServiceController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ServiceController.cs",
+              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\ServiceController.cs",
+              "RelativeToolTip": "Controllers\\ServiceController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowDYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T14:17:54.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationRole.cs",
+              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\ApplicationRole.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationRole.cs",
+              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\ApplicationRole.cs",
+              "RelativeToolTip": "Models\\ApplicationRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T07:29:00.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20250525172006_AddApplicationUserService.cs",
+              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Migrations\\20250525172006_AddApplicationUserService.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250525172006_AddApplicationUserService.cs",
+              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Migrations\\20250525172006_AddApplicationUserService.cs",
+              "RelativeToolTip": "Migrations\\20250525172006_AddApplicationUserService.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAkwGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T17:20:10.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApplicationUserService.cs",
+              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\ApplicationUserService.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationUserService.cs",
+              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\ApplicationUserService.cs",
+              "RelativeToolTip": "Models\\ApplicationUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T09:31:44.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ServiceDto.cs",
+              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Service\\ServiceDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\Service\\ServiceDto.cs",
+              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Service\\ServiceDto.cs",
+              "RelativeToolTip": "Models\\DTO\\Service\\ServiceDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T10:39:01.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ApplicationUserServiceDto.cs",
+              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Service\\ApplicationUserServiceDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\Service\\ApplicationUserServiceDto.cs",
+              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Service\\ApplicationUserServiceDto.cs",
+              "RelativeToolTip": "Models\\DTO\\Service\\ApplicationUserServiceDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T17:13:44.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Business.cs",
+              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\Business.cs",
+              "RelativeDocumentMoniker": "Models\\Business.cs",
+              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\Business.cs",
+              "RelativeToolTip": "Models\\Business.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T07:33:13.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BusinessDto.cs",
+              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Business\\BusinessDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\Business\\BusinessDto.cs",
+              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Business\\BusinessDto.cs",
+              "RelativeToolTip": "Models\\DTO\\Business\\BusinessDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T14:43:43.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "Service.cs",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\Service.cs",
               "RelativeDocumentMoniker": "Models\\Service.cs",
@@ -288,33 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AssignAppointmentDto.cs",
-              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Appointment\\AssignAppointmentDto.cs",
-              "RelativeDocumentMoniker": "Models\\DTO\\Appointment\\AssignAppointmentDto.cs",
-              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Appointment\\AssignAppointmentDto.cs",
-              "RelativeToolTip": "Models\\DTO\\Appointment\\AssignAppointmentDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T16:55:56.249Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAcwFsAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T07:29:00.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "CreateServiceDto.cs",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Service\\CreateServiceDto.cs",
               "RelativeDocumentMoniker": "Models\\DTO\\Service\\CreateServiceDto.cs",
@@ -326,43 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AppointmentDto.cs",
-              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Appointment\\AppointmentDto.cs",
-              "RelativeDocumentMoniker": "Models\\DTO\\Appointment\\AppointmentDto.cs",
-              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Appointment\\AppointmentDto.cs",
-              "RelativeToolTip": "Models\\DTO\\Appointment\\AppointmentDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T14:06:52.256Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Appointment.cs",
-              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\Appointment.cs",
-              "RelativeDocumentMoniker": "Models\\Appointment.cs",
-              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\Appointment.cs",
-              "RelativeToolTip": "Models\\Appointment.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAowCAAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T07:58:02.991Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AppointmentController.cs",
-              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\AppointmentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AppointmentController.cs",
-              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\AppointmentController.cs",
-              "RelativeToolTip": "Controllers\\AppointmentController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAQwFIAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T08:52:39.278Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "CreateBusinessDto.cs",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Business\\CreateBusinessDto.cs",
               "RelativeDocumentMoniker": "Models\\DTO\\Business\\CreateBusinessDto.cs",
@@ -374,55 +467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
-              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\ApplicationUser.cs",
-              "RelativeToolTip": "Models\\ApplicationUser.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T07:29:00.754Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "TaskController.cs",
-              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\TaskController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TaskController.cs",
-              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\TaskController.cs",
-              "RelativeToolTip": "Controllers\\TaskController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T07:29:01.012Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "BusinessController.cs",
-              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\BusinessController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BusinessController.cs",
-              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\BusinessController.cs",
-              "RelativeToolTip": "Controllers\\BusinessController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAxwCAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T14:18:58.663Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ApplicationRole.cs",
-              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\ApplicationRole.cs",
-              "RelativeDocumentMoniker": "Models\\ApplicationRole.cs",
-              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Models\\ApplicationRole.cs",
-              "RelativeToolTip": "Models\\ApplicationRole.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T07:29:00.687Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "ApplicationUserRole.cs",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\ApplicationUserRole.cs",
               "RelativeDocumentMoniker": "Models\\ApplicationUserRole.cs",
@@ -434,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "WeatherForecast.cs",
@@ -446,7 +491,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "RoleSeeder.cs",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Data\\Seeders\\RoleSeeder.cs",
               "RelativeDocumentMoniker": "Data\\Seeders\\RoleSeeder.cs",
@@ -458,7 +503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "CreateAppointmentDto.cs",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Models\\DTO\\Appointment\\CreateAppointmentDto.cs",
               "RelativeDocumentMoniker": "Models\\DTO\\Appointment\\CreateAppointmentDto.cs",
@@ -470,7 +515,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "20250524140239_includeDbSet.cs",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Migrations\\20250524140239_includeDbSet.cs",
               "RelativeDocumentMoniker": "Migrations\\20250524140239_includeDbSet.cs",
@@ -482,19 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "D:\\CSharp\\repos\\Beast\\API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwJYAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T07:29:00.948Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "20250524092243_BaseModels2.cs",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Migrations\\20250524092243_BaseModels2.cs",
               "RelativeDocumentMoniker": "Migrations\\20250524092243_BaseModels2.cs",
@@ -506,7 +539,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "20250524085622_BaseModels.cs",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Migrations\\20250524085622_BaseModels.cs",
               "RelativeDocumentMoniker": "Migrations\\20250524085622_BaseModels.cs",
@@ -518,7 +551,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "20250524093513_UpdatedRelationships.cs",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Migrations\\20250524093513_UpdatedRelationships.cs",
               "RelativeDocumentMoniker": "Migrations\\20250524093513_UpdatedRelationships.cs",
@@ -530,7 +563,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "TokenService.cs",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "Services\\TokenService.cs",
@@ -542,7 +575,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -554,7 +587,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": ".env",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\.env",
               "RelativeDocumentMoniker": ".env",
@@ -566,7 +599,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "API.csproj",
               "DocumentMoniker": "D:\\CSharp\\repos\\Beast\\API\\API.csproj",
               "RelativeDocumentMoniker": "API.csproj",
@@ -575,14 +608,6 @@
               "ViewState": "AgIAAAIAAAAAAAAAAADwvwYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-05-17T07:28:58.471Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
             }
           ]
         }
