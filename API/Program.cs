@@ -1,4 +1,6 @@
 using API.Data;
+using API.Data.Seeders;
+using API.Helpers;
 using API.Models;
 using API.Services;
 using DotNetEnv;
@@ -8,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using System.Text.Json.Serialization;
 
 Env.Load();
 
@@ -48,6 +51,8 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.Cookie.SameSite = SameSiteMode.None;
     options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
 });
+
+builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
 builder.Services.AddAuthentication(options =>
 {
@@ -153,26 +158,7 @@ using (var scope = app.Services.CreateScope())
     var services = scope.ServiceProvider;
     try
     {
-        var roleManager = services.GetRequiredService<RoleManager<ApplicationRole>>();
-        var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
-
-        if (!await roleManager.RoleExistsAsync("Admin"))
-        {
-            await roleManager.CreateAsync(new ApplicationRole
-            {
-                Name = "Admin",
-                Description = "Administrator role with full access"
-            });
-        }
-
-        if (!await roleManager.RoleExistsAsync("User"))
-        {
-            await roleManager.CreateAsync(new ApplicationRole
-            {
-                Name = "User",
-                Description = "Standard user role"
-            });
-        }
+        await RoleSeeder.SeedRolesAsync(services);
     }
     catch (Exception ex)
     {
@@ -180,6 +166,5 @@ using (var scope = app.Services.CreateScope())
         logger.LogError(ex, "An error occurred while seeding roles.");
     }
 }
-
 
 app.Run();

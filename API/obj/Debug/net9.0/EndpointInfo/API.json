@@ -14,17 +14,81 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Appointment"
+                "$ref": "#/components/schemas/CreateAppointmentDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Appointment"
+                "$ref": "#/components/schemas/CreateAppointmentDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Appointment"
+                "$ref": "#/components/schemas/CreateAppointmentDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Appointment/{id}": {
+      "get": {
+        "tags": [
+          "Appointment"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Appointment/add-appointment-to-employee/{employeeId}": {
+      "post": {
+        "tags": [
+          "Appointment"
+        ],
+        "parameters": [
+          {
+            "name": "employeeId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AssignAppointmentDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AssignAppointmentDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AssignAppointmentDto"
               }
             }
           }
@@ -133,6 +197,114 @@
         }
       }
     },
+    "/create": {
+      "post": {
+        "tags": [
+          "Business"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBusinessDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBusinessDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBusinessDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Business/{id}": {
+      "get": {
+        "tags": [
+          "Business"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Service/create": {
+      "post": {
+        "tags": [
+          "Service"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateServiceDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateServiceDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateServiceDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Service/{id}": {
+      "get": {
+        "tags": [
+          "Service"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Task": {
       "get": {
         "tags": [
@@ -160,209 +332,20 @@
   },
   "components": {
     "schemas": {
-      "ApplicationRole": {
+      "AssignAppointmentDto": {
         "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "nullable": true
-          },
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "normalizedName": {
-            "type": "string",
-            "nullable": true
-          },
-          "concurrencyStamp": {
-            "type": "string",
-            "nullable": true
-          },
-          "description": {
-            "type": "string",
-            "nullable": true
-          },
-          "userRoles": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ApplicationUserRole"
-            },
-            "nullable": true
-          }
-        },
         "additionalProperties": false
       },
-      "ApplicationUser": {
+      "CreateAppointmentDto": {
         "required": [
-          "firstName"
+          "customerId",
+          "employeeId",
+          "endTime",
+          "serviceId",
+          "startTime"
         ],
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "nullable": true
-          },
-          "userName": {
-            "type": "string",
-            "nullable": true
-          },
-          "normalizedUserName": {
-            "type": "string",
-            "nullable": true
-          },
-          "email": {
-            "type": "string",
-            "nullable": true
-          },
-          "normalizedEmail": {
-            "type": "string",
-            "nullable": true
-          },
-          "emailConfirmed": {
-            "type": "boolean"
-          },
-          "passwordHash": {
-            "type": "string",
-            "nullable": true
-          },
-          "securityStamp": {
-            "type": "string",
-            "nullable": true
-          },
-          "concurrencyStamp": {
-            "type": "string",
-            "nullable": true
-          },
-          "phoneNumber": {
-            "type": "string",
-            "nullable": true
-          },
-          "phoneNumberConfirmed": {
-            "type": "boolean"
-          },
-          "twoFactorEnabled": {
-            "type": "boolean"
-          },
-          "lockoutEnd": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "lockoutEnabled": {
-            "type": "boolean"
-          },
-          "accessFailedCount": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "firstName": {
-            "maxLength": 50,
-            "minLength": 0,
-            "type": "string"
-          },
-          "lastName": {
-            "maxLength": 50,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "userRoles": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ApplicationUserRole"
-            },
-            "nullable": true
-          },
-          "isEmployee": {
-            "type": "boolean"
-          },
-          "positionTitle": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "applicationUserServices": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ApplicationUserService"
-            },
-            "nullable": true
-          },
-          "appointmentsAsEmployee": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Appointment"
-            },
-            "nullable": true
-          },
-          "appointmentsAsCustomer": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Appointment"
-            },
-            "nullable": true
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ApplicationUserRole": {
-        "type": "object",
-        "properties": {
-          "userId": {
-            "type": "string",
-            "nullable": true
-          },
-          "roleId": {
-            "type": "string",
-            "nullable": true
-          },
-          "user": {
-            "$ref": "#/components/schemas/ApplicationUser"
-          },
-          "role": {
-            "$ref": "#/components/schemas/ApplicationRole"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ApplicationUserService": {
-        "type": "object",
-        "properties": {
-          "userId": {
-            "type": "string",
-            "nullable": true
-          },
-          "user": {
-            "$ref": "#/components/schemas/ApplicationUser"
-          },
-          "serviceId": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "service": {
-            "$ref": "#/components/schemas/Service"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Appointment": {
-        "required": [
-          "customer",
-          "employee",
-          "service"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
           "startTime": {
             "type": "string",
             "format": "date-time"
@@ -375,101 +358,51 @@
             "type": "string",
             "format": "uuid"
           },
-          "service": {
-            "$ref": "#/components/schemas/Service"
-          },
           "employeeId": {
-            "type": "string",
-            "nullable": true
-          },
-          "employee": {
-            "$ref": "#/components/schemas/ApplicationUser"
+            "minLength": 1,
+            "type": "string"
           },
           "customerId": {
-            "type": "string",
-            "nullable": true
-          },
-          "customer": {
-            "$ref": "#/components/schemas/ApplicationUser"
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "updatedAt": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "notes": {
+            "maxLength": 300,
+            "minLength": 0,
             "type": "string",
             "nullable": true
-          },
-          "status": {
-            "$ref": "#/components/schemas/AppointmentStatus"
           }
         },
         "additionalProperties": false
       },
-      "AppointmentStatus": {
-        "enum": [
-          0,
-          1,
-          2,
-          3
-        ],
-        "type": "integer",
-        "format": "int32"
-      },
-      "Business": {
+      "CreateBusinessDto": {
         "required": [
           "name"
         ],
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
           "name": {
             "maxLength": 150,
-            "minLength": 1,
+            "minLength": 0,
             "type": "string"
           },
           "address": {
             "maxLength": 150,
-            "minLength": 1,
+            "minLength": 0,
             "type": "string",
-            "nullable": true
-          },
-          "employees": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ApplicationUser"
-            },
-            "nullable": true
-          },
-          "services": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Service"
-            },
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "Service": {
+      "CreateServiceDto": {
         "required": [
+          "businessId",
           "description",
           "name"
         ],
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
           "name": {
             "maxLength": 100,
             "minLength": 1,
@@ -494,25 +427,6 @@
           "businessId": {
             "type": "string",
             "format": "uuid"
-          },
-          "business": {
-            "$ref": "#/components/schemas/Business"
-          },
-          "applicationUserServices": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ApplicationUserService"
-            },
-            "nullable": true
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "updatedAt": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
           }
         },
         "additionalProperties": false

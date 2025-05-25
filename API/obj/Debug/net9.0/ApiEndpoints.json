@@ -1,6 +1,43 @@
 [
   {
     "ContainingType": "API.Controllers.AppointmentController",
+    "Method": "GetAppointmentById",
+    "RelativePath": "api/Appointment/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AppointmentController",
+    "Method": "AddAppointmentToEmployee",
+    "RelativePath": "api/Appointment/add-appointment-to-employee/{employeeId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "API.Models.DTO.Appointment.AssignAppointmentDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "employeeId",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AppointmentController",
     "Method": "CreateAppointment",
     "RelativePath": "api/Appointment/create",
     "HttpMethod": "POST",
@@ -8,8 +45,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "appointment",
-        "Type": "API.Models.Appointment",
+        "Name": "dto",
+        "Type": "API.Models.DTO.Appointment.CreateAppointmentDto",
         "IsRequired": true
       }
     ],
@@ -89,6 +126,54 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API.Controllers.BusinessController",
+    "Method": "GetBusinessById",
+    "RelativePath": "api/Business/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ServiceController",
+    "Method": "GetServiceById",
+    "RelativePath": "api/Service/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ServiceController",
+    "Method": "CreateService",
+    "RelativePath": "api/Service/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "API.Models.DTO.Service.CreateServiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API.Controllers.TaskController",
     "Method": "GetTasks",
     "RelativePath": "api/Task",
@@ -106,6 +191,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.BusinessController",
+    "Method": "CreateBusiness",
+    "RelativePath": "create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "API.Models.DTO.Business.CreateBusinessDto",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   }
 ]

@@ -15,7 +15,7 @@ namespace API.Data
         {
         }
         public DbSet<Appointment> Appointments { get; set; }
-        public DbSet<Service> Services { get; set; }
+        public DbSet<Models.Service> Services { get; set; }
         public DbSet<Business> Businesses { get; set; }
         public DbSet<ApplicationUserService> ApplicationUserServices { get; set; }
 
