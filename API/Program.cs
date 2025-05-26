@@ -1,6 +1,7 @@
 using API.Data;
 using API.Data.Seeders;
 using API.Helpers;
+using API.Middleware;
 using API.Models;
 using API.Services;
 using DotNetEnv;
@@ -147,6 +148,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
+app.UseMiddleware<ErrorHandlingMiddleware>();
 app.UseCookiePolicy();
 app.UseCors("AllowAll");
 app.UseAuthentication();
