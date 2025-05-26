@@ -34,6 +34,8 @@ namespace API.Controllers
 
             if (dto.StartTime < DateTime.UtcNow)
                 return BadRequest("StartTime must be in the future.");
+            if (dto.EndTime < DateTime.UtcNow)
+                return BadRequest("EndTime must be in the future.");
 
             var service = await _context.Services.FindAsync(dto.ServiceId);
             if (service == null)

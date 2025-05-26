@@ -123,5 +123,39 @@ namespace API.Controllers
             await _context.SaveChangesAsync();
             return NoContent();
         }
+
+        [HttpPatch("{employeeId}/appointments/{appointmentId}/reassign/{newEmployeeId}")]
+        public async Task<IActionResult> ReassignAppointment(string employeeId, Guid appointmentId, string newEmployeeId)
+        {
+            var employee = await _context.Users
+                .Include(u => u.AppointmentsAsEmployee)
+                .FirstOrDefaultAsync(u => u.Id == employeeId);
+            if (employee == null)
+                return NotFound($"Employee with ID {employeeId} not found.");
+
+            var appointment = employee.AppointmentsAsEmployee.FirstOrDefault(a => a.Id == appointmentId);
+            if (appointment == null)
+                return NotFound($"Appointment with ID {appointmentId} not found for employee with ID {employeeId}.");
+
+            var newEmployee = await _context.Users
+                .Include(u => u.ApplicationUserServices)
+                .FirstOrDefaultAsync(u => u.Id == newEmployeeId);
+
+            if (newEmployee == null)
+                return NotFound($"New employee with ID {newEmployeeId} not found.");
+
+            var canProvideService = newEmployee.ApplicationUserServices
+                .Any(s => s.ServiceId == appointment.ServiceId);
+
+            if (!canProvideService)
+                return BadRequest($"Employee with ID {newEmployeeId} cannot provide the service required by this appointment.");
+
+            appointment.EmployeeId = newEmployeeId;
+            appointment.Employee = newEmployee;
+
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
     }
 }

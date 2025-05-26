@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection.Emit;
 
 namespace API.Data
 {
@@ -18,6 +19,7 @@ namespace API.Data
         public DbSet<Models.Service> Services { get; set; }
         public DbSet<Business> Businesses { get; set; }
         public DbSet<ApplicationUserService> ApplicationUserServices { get; set; }
+        public DbSet<AppointmentRequest> AppointmentRequests { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -83,6 +85,24 @@ namespace API.Data
             builder.Entity<Service>()
                 .Property(s => s.Price)
                 .HasPrecision(18, 2);
+
+            builder.Entity<AppointmentRequest>()
+                .HasOne(ar => ar.Customer)
+                .WithMany()
+                .HasForeignKey(ar => ar.CustomerId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Entity<AppointmentRequest>()
+                .HasOne(ar => ar.Service)
+                .WithMany()
+                .HasForeignKey(ar => ar.ServiceId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Entity<AppointmentRequest>()
+                .HasOne(ar => ar.Appointment)
+                .WithOne()
+                .HasForeignKey<AppointmentRequest>(ar => ar.AppointmentId)
+                .OnDelete(DeleteBehavior.SetNull);
 
             // Default values
             builder.Entity<ApplicationUser>()

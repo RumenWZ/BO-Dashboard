@@ -1,5 +1,6 @@
 ﻿using API.Models;
 using API.Models.DTO.Appointment;
+using API.Models.DTO.AppointmentRequests;
 using API.Models.DTO.Business;
 using API.Models.DTO.Service;
 using AutoMapper;
@@ -25,6 +26,11 @@ namespace API.Helpers
             .ForMember(dest => dest.UpdatedAt, opt => opt.Ignore()) 
             .ForMember(dest => dest.Business, opt => opt.Ignore())
             .ForMember(dest => dest.ApplicationUserServices, opt => opt.Ignore());
+
+            // Application Requests
+            CreateMap<AppointmentRequest, AppointmentRequestDto>();
+            CreateMap<CreateAppointmentRequestDto, AppointmentRequest>();
+            CreateMap<UpdateAppointmentDto, Appointment>();
 
             // User
             CreateMap<ApplicationUserService, ApplicationUserServiceDto>()
