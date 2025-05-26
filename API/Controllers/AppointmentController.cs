@@ -23,7 +23,7 @@ namespace API.Controllers
             _mapper = mapper;
         }
 
-        [HttpPost("create")]
+        [HttpPost]
         public async Task<IActionResult> CreateAppointment([FromBody] CreateAppointmentDto dto)
         {
             if (!ModelState.IsValid)
@@ -79,7 +79,7 @@ namespace API.Controllers
             return Ok(result);
         }
 
-        [HttpDelete("delete/{id}")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAppointment(Guid id)
         {
             var appointment = await _context.Appointments.FindAsync(id);
@@ -120,52 +120,6 @@ namespace API.Controllers
             return Ok(result);
         }
 
-
-        [HttpGet("customer/{customerId}/appointments")]
-        public async Task<IActionResult> GetAppointmentsForCustomer(string customerId)
-        {
-            var customer = await _context.Users
-                .Include(u => u.AppointmentsAsCustomer)
-                    .ThenInclude(a => a.Service)
-                .Include(u => u.AppointmentsAsCustomer)
-                    .ThenInclude(a => a.Employee)
-                .FirstOrDefaultAsync(u => u.Id == customerId);
-
-            
-            if (customer == null)
-                return NotFound($"Customer with ID {customerId} not found.");
-
-            var appointments = customer.AppointmentsAsCustomer
-                .OrderByDescending(a => a.StartTime)
-                .ToList();
-
-            var result = _mapper.Map<List<AppointmentDto>>(appointments);
-            return Ok(result);
-        }
-
-        [HttpGet("employee/{employeeId}/appointments/upcoming")]
-        public async Task<IActionResult> GetUpcomingAppointmentsForEmployee(string employeeId)
-        {
-            var employee = await _context.Users
-                .Include(u => u.AppointmentsAsEmployee)
-                    .ThenInclude(a => a.Service)
-                .Include(u => u.AppointmentsAsEmployee)
-                    .ThenInclude(a => a.Customer)
-                .FirstOrDefaultAsync(u => u.Id == employeeId);
-
-            if (employee == null)
-                return NotFound($"Employee with ID {employeeId} not found.");
-
-            var now = DateTime.UtcNow;
-
-            var upcomingAppointments = employee.AppointmentsAsEmployee
-                .Where(a => a.StartTime > now && a.Status != AppointmentStatus.Cancelled)
-                .OrderBy(a => a.StartTime)
-                .ToList();
-
-            var result = _mapper.Map<List<AppointmentDto>>(upcomingAppointments);
-            return Ok(result);
-        }
 
     }
 }
